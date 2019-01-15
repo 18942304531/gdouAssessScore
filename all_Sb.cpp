@@ -10,7 +10,7 @@ Subject::Subject(string sN,float score,float credit)
 }
 void initGrade(all_Sbject* sb_List,Subject* data,int length){
     if(length > V){
-        cout << "ÄãÃ»ÓÐÄÇÃ´¶àÃÅ¿ÆÄ¿" << endl;
+        cout << "ä½ æ²¡æœ‰é‚£ä¹ˆå¤šé—¨ç§‘ç›®" << endl;
         return;
     }
     sb_List->amount = 0;
@@ -22,7 +22,7 @@ void initGrade(all_Sbject* sb_List,Subject* data,int length){
 void insertGrade(all_Sbject* sb_List,int index,Subject sb){
     if(index > V - 1 || index > sb_List->amount || index < 0 || sb_List->amount > V)
     {
-        cout << "³ö´íÁË£¡" << endl;
+        cout << "å‡ºé”™äº†ï¼" << endl;
         return;
     }
     for(int i = sb_List->amount - 1;i >= index;--i)
@@ -34,9 +34,10 @@ void insertGrade(all_Sbject* sb_List,int index,Subject sb){
 }
 void printGrade(all_Sbject* sb_List){
     for(int i = 0;i < sb_List->amount;i++){
-        cout << sb_List->datas[i].getsN() << ':' << "µ¥¿Æ¼¨µã£º"
-             << sb_List->datas[i].getm_score() << "  ¸Ã¿ÆÑ§·Ö£º" << sb_List->datas[i].getm_credit();
-        cout << endl;
+        cout << sb_List->datas[i].getsN() << '\t' + ':' << "å•ç§‘ç»©ç‚¹ï¼š"
+             << sb_List->datas[i].getm_score() << "  è¯¥ç§‘å­¦åˆ†ï¼š" 
+             << sb_List->datas[i].getm_credit()
+             << endl;
         }
 }
 float caclTotal(all_Sbject* sb_List){
