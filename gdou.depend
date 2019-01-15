@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1547517258 source:c:\codeblocks\cspace\practice\gdou\main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"all_Sb.h"
+
+1547517961 c:\codeblocks\cspace\practice\gdou\all_sb.h
+	<iostream>
+
+1547517971 source:c:\codeblocks\cspace\practice\gdou\all_sb.cpp
+	"all_Sb.h"
+	<iostream>
+
