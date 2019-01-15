@@ -36,8 +36,7 @@ void printGrade(all_Sbject* sb_List){
     for(int i = 0;i < sb_List->amount;i++){
         cout << sb_List->datas[i].getsN() << '\t' + ':' << "单科绩点："
              << sb_List->datas[i].getm_score() << "  该科学分：" 
-             << sb_List->datas[i].getm_credit()
-             << endl;
+             << sb_List->datas[i].getm_credit() << endl;
         }
 }
 float caclTotal(all_Sbject* sb_List){
