@@ -14,19 +14,20 @@ int main()
         string nn;
         float ss;
         float cc;
-        cout << "ÇëÊäÈëµÚ" << i + 1 << "ÃÅµÄÃû×Ö: ";
+        cout << "è¯·è¾“å…¥ç¬¬" << i + 1 << "é—¨çš„åå­—: ";
         cin >> nn;
-        cout << "µ¥¿Æ¼¨µã£º";
+        cout << "å•ç§‘ç»©ç‚¹ï¼š";
         cin >> ss;
-        cout << "¸Ã¿ÆÑ§·Ö£º";
+        cout << "è¯¥ç§‘å­¦åˆ†ï¼š";
         cin >> cc;
         everysb[i].setm_credit(cc);
         everysb[i].setm_score(ss);
         everysb[i].setsN(nn);
     }
+        system("cls");
         all_Sbject yourList;
         initGrade(&yourList,everysb,V);
         printGrade(&yourList);
-        cout << "×ÜÆ½¾ù¼¨µã£º " << caclTotal(&yourList) << endl;
+        cout << "æ€»å¹³å‡ç»©ç‚¹ï¼š " << caclTotal(&yourList) << endl;
     return 0;
 }
